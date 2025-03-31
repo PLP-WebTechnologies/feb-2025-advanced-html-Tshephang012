@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="styles.css"> 
+<body>
+
+  
+    <header>
+        <h1>Welcome to Our Website</h1>
+    </header>
+
+   
+    <section>
+        <h2>Our Services</h2>
+        <ol type="I">
+            <li>Web Development</li>
+            <li>Graphic Design</li>
+            <li>SEO Optimization</li>
+            <li>Digital Marketing</li>
+            <li>Content Writing</li>
+        </ol>
+    </section>
+
+    
+    <section>
+        <h2>Our Work</h2>
+        <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" 
+             alt="Office Work" width="600">
+    </section>
+
+    <!-- Contact Table -->
+    <section>
+        <h2>Contact List</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Main St, NY</td>
+                    <td>+1 555-1234</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Oak St, CA</td>
+                    <td>+1 555-5678</td>
+                    <td>jane@example.com</td>
+                </tr>
+                <tr>
+                    <td>Michael Brown</td>
+                    <td>789 Pine St, TX</td>
+                    <td>+1 555-9876</td>
+                    <td>michael@example.com</td>
+                </tr>
+                <tr>
+                    <td>Lisa White</td>
+                    <td>321 Birch St, FL</td>
+                    <td>+1 555-4321</td>
+                    <td>lisa@example.com</td>
+                </tr>
+                <tr>
+                    <td>David Johnson</td>
+                    <td>654 Cedar St, WA</td>
+                    <td>+1 555-8765</td>
+                    <td>david@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+   
+    <section>
+        <h2>Register Here</h2>
+        <form action="submit.php" method="POST">
+
+          
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <br><br>
+
+           
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            ->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+            <label for="country">Select Country:</label>
+            <select id="country" name="country" required>
+                <option value="">-- Select --</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </select>
+            <br><br>
+
+       
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other"> <label for="other">Other</label>
+            <br><br>
+
+            
+            <label>Interests:</label>
+            <input type="checkbox" id="coding" name="interests" value="coding"> <label for="coding">Coding</label>
+            <input type="checkbox" id="design" name="interests" value="design"> <label for="design">Design</label>
+            <input type="checkbox" id="music" name="interests" value="music"> <label for="music">Music</label>
+            <br><br>
+
+           
+            <button type="submit">Register</button>
+
+        </form>
+    </section>
+
+</body>
+</html>
